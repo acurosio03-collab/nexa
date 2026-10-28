@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>NEXA — BEYOND TOMORROW</title>
+  <meta name="description" content="NEXA: ruang digital generasi baru untuk produktivitas, AI, keamanan digital, dan alat pintar.">
+  <meta name="theme-color" content="#04060f">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#view">Lewati ke konten</a>
+  <div class="stars" id="stars" aria-hidden="true"></div>
+
+  <div class="app">
+    <aside class="side" aria-label="Navigasi utama">
+      <a class="brand" href="#/overview" aria-label="NEXA — Beranda">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span><b>NEXA</b><small>BEYOND TOMORROW</small></span>
+      </a>
+      <nav class="nav" id="nav-side" aria-label="Menu"></nav>
+      <div class="side-foot" id="side-foot">NEXA v1.0</div>
+    </aside>
+
+    <div class="main">
+      <header class="top">
+        <h1 id="page-title">Overview</h1>
+        <span class="badge" id="focus-chip" hidden></span>
+        <span class="badge demo" id="mode-badge" title="Mode penyimpanan">DEMO · LOKAL</span>
+        <button class="iconbtn" id="btn-search" aria-label="Cari fitur dan data (Ctrl+K)">🔍</button>
+        <button class="iconbtn" id="btn-notif" aria-label="Pusat aktivitas">🔔<span class="dot" id="notif-dot" hidden></span></button>
+        <a class="avatar" id="top-avatar" href="#/settings" aria-label="Profil dan pengaturan">🧑‍🚀</a>
+      </header>
+      <div class="banner" id="banner" role="status" hidden></div>
+      <main class="view" id="view" tabindex="-1" aria-live="polite">
+        <div class="loading"><span class="spin"></span> Memuat NEXA…</div>
+      </main>
+    </div>
+  </div>
+
+  <nav class="bottom" id="nav-bottom" aria-label="Navigasi ponsel"></nav>
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+  <noscript><div style="padding:24px;position:relative;z-index:5">NEXA membutuhkan JavaScript untuk berjalan.</div></noscript>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

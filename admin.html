@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#04060f">
+  <title>NEXA Admin</title>
+  <link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .adm { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; padding: 16px 16px 48px; }
+    .adm-top { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 6px 0 14px; }
+    .adm-top .grow { flex: 1; }
+    .stat { font: 700 1.7rem var(--mono); color: var(--cyan); }
+    .daybars { display: flex; align-items: flex-end; gap: 8px; height: 110px; }
+    .daybars div { flex: 1; text-align: center; font-size: .7rem; color: var(--muted); display: flex; flex-direction: column; justify-content: flex-end; height: 100%; }
+    .daybars i { display: block; background: linear-gradient(180deg, var(--cyan), var(--violet)); border-radius: 6px 6px 0 0; min-height: 2px; }
+    textarea.tall { min-height: 120px; }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#adm-view">Lewati ke konten</a>
+  <div class="adm">
+    <header class="adm-top">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div><b style="letter-spacing:.2em">NEXA ADMIN</b><div class="muted small" id="who">Memeriksa sesi…</div></div>
+      <span class="grow"></span>
+      <a class="btn sm" href="/">← Kembali ke NEXA</a>
+      <button class="btn sm ghost" id="btn-out" hidden>Keluar</button>
+    </header>
+    <nav class="tabs" id="adm-tabs" role="tablist" aria-label="Menu admin" hidden></nav>
+    <main id="adm-view" tabindex="-1" aria-live="polite"><div class="loading"><span class="spin"></span> Memuat…</div></main>
+  </div>
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+  <noscript><div style="padding:24px;position:relative;z-index:5">Admin Panel membutuhkan JavaScript.</div></noscript>
+  <script type="module" src="/js/admin.js"></script>
+</body>
+</html>
